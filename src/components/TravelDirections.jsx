@@ -1,6 +1,9 @@
 import { Container } from '../ui/Container'
 import { Reserve } from '../ui/Reserve'
 
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 // eslint-disable-next-line react/prop-types
 const Card = ({ title, imageUrl }) => {
 	return (
@@ -12,7 +15,12 @@ const Card = ({ title, imageUrl }) => {
 						'linear-gradient(180deg, #141E3000 40%, #495d0d 100%)',
 				}}
 			></div>
-			<img className='w-full h-full object-cover ' src={imageUrl} alt={title} />
+			<LazyLoadImage
+				className='w-full h-full object-cover '
+				src={imageUrl}
+				alt={title}
+				effect='blur'
+			/>
 			<div className='absolute bottom-0 left-0 p-12 z-[2]'>
 				<h3 className='mb-5 text-white sm:text-4xl lg:text-3xl text-2xl'>
 					{title}
@@ -64,30 +72,6 @@ export const TravelDirections = () => {
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
-		{
-			id: 1,
-			title: 'Путешествие по ОАЭ',
-			imageUrl:
-				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
-		},
-		{
-			id: 2,
-			title: 'Тур по Италии',
-			imageUrl:
-				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
-		},
-		{
-			id: 1,
-			title: 'Путешествие по ОАЭ',
-			imageUrl:
-				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
-		},
-		{
-			id: 2,
-			title: 'Тур по Италии',
-			imageUrl:
-				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
-		},
 		// Добавьте еще 8 карточек
 	]
 
@@ -98,21 +82,8 @@ export const TravelDirections = () => {
 			</Container>
 			<div className='grid lg:grid-cols-3 lg:p-0 p-5 lg:gap-0 gap-5'>
 				{directions.map((direction, index) => {
-					let colSpanClass = ''
-
-					// Первый ряд: col-span-1, col-span-2
-					if (index % 5 === 0) {
-						colSpanClass = 'col-span-1'
-					} else if (index % 5 === 1) {
-						colSpanClass = 'lg:col-span-2 col-span-1'
-					}
-					// Второй ряд: col-span-1, col-span-1, col-span-1
-					else {
-						colSpanClass = 'col-span-1'
-					}
-
 					return (
-						<div key={index} className={colSpanClass}>
+						<div key={index}>
 							<Card title={direction.title} imageUrl={direction.imageUrl} />
 						</div>
 					)

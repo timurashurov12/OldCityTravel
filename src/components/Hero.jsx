@@ -6,8 +6,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Autoplay, EffectFade } from 'swiper/modules'
 import bg2 from '../assets/2986c598176097.5ed667624a051.jpg'
-import bg from '../assets/58286198176097.5ed6676247b29.jpg'
-import bg1 from '../assets/db55bf98176097.5ed667624cc20.jpg'
+import bg from '../assets/58286198176097.5ed6676247b29.webp'
+import bg1 from '../assets/db55bf98176097.5ed667624cc20.webp'
 import { Button } from '../ui/button'
 
 export const Hero = () => {
