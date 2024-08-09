@@ -5,6 +5,14 @@
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #141e30;
+	color: #fff;
+	background-color: #fff;
+	color: black;
+	/* blue #141E30; */
+	/* yellow #f5b31c; */
+	/* green #6e8f0b */
+}
+
+html {
+	scroll-behavior: smooth;
 }

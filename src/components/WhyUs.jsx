@@ -26,13 +26,13 @@ export const WhyUs = () => {
 							]}
 						>
 							<Checkbox value='Полное сотрудничество'>
-								<p className='text-lg text-white'>Полное сотрудничество</p>
+								<p className='text-lg'>Полное сотрудничество</p>
 							</Checkbox>
 							<Checkbox value='Безопасные путешествия'>
-								<p className='text-lg text-white'>Безопасные путешествия</p>
+								<p className='text-lg'>Безопасные путешествия</p>
 							</Checkbox>
 							<Checkbox value='Лучшие курорты'>
-								<p className='text-lg text-white'>Лучшие курорты</p>
+								<p className='text-lg'>Лучшие курорты</p>
 							</Checkbox>
 						</CheckboxGroup>
 						<Button>Связь</Button>

@@ -1,11 +1,10 @@
 import { NextUIProvider } from '@nextui-org/react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider } from 'react-router-dom'
+import App from './App'
 import './index.css'
-import { router } from './router'
 
 createRoot(document.getElementById('root')).render(
 	<NextUIProvider>
-		<RouterProvider router={router} />
+		<App />
 	</NextUIProvider>
 )

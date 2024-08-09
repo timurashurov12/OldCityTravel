@@ -1,5 +1,5 @@
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
 import { Container } from '../ui/Container'
+import { Reserve } from '../ui/Reserve'
 
 // eslint-disable-next-line react/prop-types
 const Card = ({ title, imageUrl }) => {
@@ -9,21 +9,16 @@ const Card = ({ title, imageUrl }) => {
 				className='absolute top-0 left-0 w-full h-full z-[1]'
 				style={{
 					backgroundImage:
-						'linear-gradient(180deg, #141E3000 0%, #131D2E 100%)',
+						'linear-gradient(180deg, #141E3000 40%, #495d0d 100%)',
 				}}
 			></div>
 			<img className='w-full h-full object-cover ' src={imageUrl} alt={title} />
 			<div className='absolute bottom-0 left-0 p-12 z-[2]'>
-				<h3 className='mb-5 sm:text-4xl lg:text-3xl text-2xl'>{title}</h3>
+				<h3 className='mb-5 text-white sm:text-4xl lg:text-3xl text-2xl'>
+					{title}
+				</h3>
 				<div className='flex gap-10 sm:text-lg'>
-					<p className='flex flex-nowrap items-center'>
-						Покупка
-						<KeyboardArrowRightIcon />
-					</p>
-					<p className='flex flex-nowrap items-center'>
-						Забронировать
-						<KeyboardArrowRightIcon />
-					</p>
+					<Reserve />
 				</div>
 			</div>
 		</div>
@@ -97,7 +92,7 @@ export const TravelDirections = () => {
 	]
 
 	return (
-		<section className='py-32'>
+		<section id='trip' className='py-32'>
 			<Container>
 				<h2 className='sm:text-6xl text-4xl mb-5'>Направления путешествия</h2>
 			</Container>
@@ -117,7 +112,7 @@ export const TravelDirections = () => {
 					}
 
 					return (
-						<div key={direction.id} className={colSpanClass}>
+						<div key={index} className={colSpanClass}>
 							<Card title={direction.title} imageUrl={direction.imageUrl} />
 						</div>
 					)

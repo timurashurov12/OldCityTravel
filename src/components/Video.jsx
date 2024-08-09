@@ -4,6 +4,7 @@ export const Video = () => {
 	return (
 		<section className='pt-32'>
 			<Container>
+				<h3 className='lg:text-6xl text-5xl pb-6'>Видеокассета</h3>
 				<div className='w-full'>
 					<iframe
 						className='w-full h-[730px]'

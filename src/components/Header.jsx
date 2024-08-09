@@ -1,31 +1,58 @@
+import { useEffect, useState } from 'react'
+import logo from '../assets/oldcitytravel_logo.svg'
 import { Container } from '../ui/Container'
 import SwipeableTemporaryDrawer from '../ui/mobileMenu'
 
 export const Header = () => {
+	const [isScrolled, setIsScrolled] = useState(false)
+	const [isHomePage, setIsHomePage] = useState(false)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsScrolled(window.scrollY > 10)
+		}
+
+		const handleLocationChange = () => {
+			setIsHomePage(window.location.href === 'http://localhost:5173/')
+		}
+
+		handleLocationChange() // Set initial state
+
+		window.addEventListener('scroll', handleScroll)
+		window.addEventListener('popstate', handleLocationChange) // Handle back/forward navigation
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+			window.removeEventListener('popstate', handleLocationChange)
+		}
+	}, [])
+
 	return (
-		<header>
+		<header
+			className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+				isScrolled || !isHomePage ? 'bg-[#141e30]' : 'bg-transparent'
+			}`}
+		>
 			<Container>
 				<div className='flex items-center py-2 justify-between'>
-					<img
-						className='w-[120px] h-[120px]'
-						src='https://wonderfull-travel.uz/wp-content/uploads/2024/01/Wonderful-Travel-997x1024.png'
-						alt='logo'
-					/>
-					<ul className='gap-4 text-lg lg:flex hidden'>
+					<a to='/'>
+						<img className='w-[120px] h-[120px]' src={logo} alt='logo' />
+					</a>
+					<ul className={`gap-4 text-xl lg:flex hidden text-white`}>
 						<li>
-							<a href='#!'>Домашняя страница</a>
+							<a href='/'>Домашняя страница</a>
 						</li>
 						<li>
-							<a href='#!'>О нас</a>
+							<a href='/#about'>О нас</a>
 						</li>
 						<li>
-							<a href='#!'>Наши сервисы</a>
+							<a href='/#services'>Наши сервисы</a>
 						</li>
 						<li>
-							<a href='#!'>Путешествия</a>
+							<a href='/#trip'>Путешествия</a>
 						</li>
 						<li>
-							<a href='#!'>Коммуникация</a>
+							<a href='/#contact'>Коммуникация</a>
 						</li>
 					</ul>
 					<div className='lg:flex gap-2 hidden'>

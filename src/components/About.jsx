@@ -3,7 +3,7 @@ import { Container } from '../ui/Container'
 
 export const About = () => {
 	return (
-		<section className='py-32'>
+		<section id='about' className='py-32'>
 			<Container>
 				<div className='flex justify-between lg:flex-row flex-col-reverse sm:gap-16 gap-5'>
 					<img

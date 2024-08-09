@@ -22,25 +22,43 @@ export default function SwipeableTemporaryDrawer() {
 		>
 			<List>
 				{[
-					'Домашняя страница',
-					'О нас',
-					'Наши сервисы',
-					'Путешествия',
-					'Коммуникация',
-				].map(text => (
-					<ListItem key={text} disablePadding>
-						<ListItemButton>
-							<ListItemText primary={text} />
+					{ text: 'Домашняя страница', link: '/' },
+					{ text: 'О нас', link: '/#about' },
+					{ text: 'Наши сервисы', link: '/#services' },
+					{ text: 'Путешествия', link: '/#trip' },
+					{ text: 'Коммуникация', link: '/#contact' },
+				].map(item => (
+					<ListItem key={item.text} disablePadding>
+						<ListItemButton component='a' href={item.link}>
+							<ListItemText primary={item.text} />
 						</ListItemButton>
 					</ListItem>
 				))}
+				<div className='flex gap-3 justify-start p-3'>
+					<img
+						src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/en-us.png'
+						alt='usa'
+					/>
+					<img
+						src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/ru.png'
+						alt='russian'
+					/>
+					<img
+						src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/uz.png'
+						alt='uzbekistan'
+					/>
+				</div>
 			</List>
 		</Box>
 	)
 
 	return (
 		<div className='block lg:hidden'>
-			<MenuIcon fontSize='large' onClick={toggleDrawer(true)} />
+			<MenuIcon
+				sx={{ color: 'white' }}
+				fontSize='large'
+				onClick={toggleDrawer(true)}
+			/>
 			<SwipeableDrawer
 				sx={{ transform: 'translateY(136px)' }}
 				anchor='top'
