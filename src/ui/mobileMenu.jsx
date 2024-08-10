@@ -6,10 +6,14 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import SwipeableDrawer from '@mui/material/SwipeableDrawer'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function SwipeableTemporaryDrawer() {
 	const [open, setOpen] = useState(false)
-
+	const { i18n } = useTranslation()
+	const changeLanguage = language => {
+		i18n.changeLanguage(language)
+	}
 	const toggleDrawer = newOpen => () => {
 		setOpen(newOpen)
 	}
@@ -36,14 +40,17 @@ export default function SwipeableTemporaryDrawer() {
 				))}
 				<div className='flex gap-3 justify-start p-3'>
 					<img
+						onClick={() => changeLanguage('en')}
 						src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/en-us.png'
 						alt='usa'
 					/>
 					<img
+						onClick={() => changeLanguage('ru')}
 						src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/ru.png'
 						alt='russian'
 					/>
 					<img
+						onClick={() => changeLanguage('uz')}
 						src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/uz.png'
 						alt='uzbekistan'
 					/>
