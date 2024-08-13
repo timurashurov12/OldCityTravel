@@ -11,10 +11,11 @@ import {
 	Textarea,
 	useDisclosure,
 } from '@nextui-org/react'
+import { useTranslation } from 'react-i18next'
 
 export const Reserve = () => {
 	const { isOpen, onOpen, onOpenChange } = useDisclosure()
-
+	const { t } = useTranslation()
 	return (
 		<>
 			<Button
@@ -22,20 +23,20 @@ export const Reserve = () => {
 				endContent={<KeyboardArrowRightIcon />}
 				onPress={onOpen}
 			>
-				Забронировать
+				{t('form.button')}
 			</Button>
 			<Modal isOpen={isOpen} onOpenChange={onOpenChange}>
 				<ModalContent>
 					{onClose => (
 						<>
 							<ModalHeader className='flex flex-col gap-1 text-black text-center text-2xl my-3'>
-								Забронируйте сейчас
+								{t('form.title')}
 							</ModalHeader>
 							<ModalBody>
-								<Input label='Ваше имя' />
-								<Input label='Ваше email' />
-								<Input label='Ваш телефон' />
-								<Textarea label='Ваше пожелания' />
+								<Input label={t('form.name')} />
+								<Input label={t('form.email')} />
+								<Input label={t('form.phone')} />
+								<Textarea label={t('form.wishes')} />
 							</ModalBody>
 							<ModalFooter>
 								<Button
@@ -43,7 +44,7 @@ export const Reserve = () => {
 									variant='light'
 									onPress={onClose}
 								>
-									Забронировать
+									{t('form.button')}
 								</Button>
 							</ModalFooter>
 						</>

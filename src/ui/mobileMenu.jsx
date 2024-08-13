@@ -7,12 +7,17 @@ import ListItemText from '@mui/material/ListItemText'
 import SwipeableDrawer from '@mui/material/SwipeableDrawer'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 
 export default function SwipeableTemporaryDrawer() {
 	const [open, setOpen] = useState(false)
+
 	const { i18n } = useTranslation()
+	const navigate = useNavigate()
 	const changeLanguage = language => {
 		i18n.changeLanguage(language)
+		// Update the URL to reflect the new language
+		navigate(`/${language}`, { replace: true })
 	}
 	const toggleDrawer = newOpen => () => {
 		setOpen(newOpen)

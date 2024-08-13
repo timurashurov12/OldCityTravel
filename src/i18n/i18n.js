@@ -24,7 +24,7 @@ i18n
 	.use(initReactI18next)
 	.init({
 		resources,
-		fallbackLng: 'en',
+		fallbackLng: 'ru',
 		detection: {
 			order: ['queryString', 'cookie'],
 			cache: ['cookie'],

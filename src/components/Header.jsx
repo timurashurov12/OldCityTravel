@@ -4,13 +4,16 @@ import { Container } from '../ui/Container'
 import SwipeableTemporaryDrawer from '../ui/mobileMenu'
 
 import { useTranslation } from 'react-i18next'
+import { useNavigate } from 'react-router-dom'
 
 export const Header = () => {
-	const { i18n } = useTranslation()
+	const { i18n, t } = useTranslation()
+	const navigate = useNavigate()
 	const changeLanguage = language => {
 		i18n.changeLanguage(language)
+		// Update the URL to reflect the new language
+		navigate(`/${language}`, { replace: true })
 	}
-
 	// console.log(document.body.style.overflow = 'hidden')
 	const [isScrolled, setIsScrolled] = useState(false)
 
@@ -36,34 +39,37 @@ export const Header = () => {
 					<img className='w-[120px] h-[120px]' src={logo} alt='logo' />
 					<ul className={`gap-4 text-xl lg:flex hidden text-white`}>
 						<li>
-							<a href='/'>Домашняя страница</a>
+							<a href='/'>{t('header.home')}</a>
 						</li>
 						<li>
-							<a href='/#about'>О нас</a>
+							<a href='#about'>{t('header.about')}</a>
 						</li>
 						<li>
-							<a href='/#services'>Наши сервисы</a>
+							<a href='#services'>{t('header.service')}</a>
 						</li>
 						<li>
-							<a href='/#trip'>Путешествия</a>
+							<a href='#trip'>{t('header.travel')}</a>
 						</li>
 						<li>
-							<a href='/#contact'>Коммуникация</a>
+							<a href='#contact'>{t('header.contact')}</a>
 						</li>
 					</ul>
 					<div className='lg:flex gap-2 hidden'>
 						<img
 							onClick={() => changeLanguage('en')}
+							className='cursor-pointer'
 							src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/en-us.png'
 							alt='usa'
 						/>
 						<img
 							onClick={() => changeLanguage('ru')}
+							className='cursor-pointer'
 							src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/ru.png'
 							alt='russian'
 						/>
 						<img
 							onClick={() => changeLanguage('uz')}
+							className='cursor-pointer'
 							src='https://wonderfull-travel.uz/wp-content/plugins/gtranslate/flags/32/uz.png'
 							alt='uzbekistan'
 						/>

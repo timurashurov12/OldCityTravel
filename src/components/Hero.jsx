@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { useTranslation } from 'react-i18next'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/navigation'
@@ -11,21 +12,18 @@ import bg1 from '../assets/db55bf98176097.5ed667624cc20.webp'
 import { Button } from '../ui/button'
 
 export const Hero = () => {
+	const { t } = useTranslation()
 	return (
 		// <section className='relative w-full h-[calc(100vh_-_136px)] overflow-hidden'>
-		<section className='relative w-full h-screen overflow-hidden'>
+		<section className='relative w-full h-screen'>
 			<div className='absolute w-full h-full z-10 text-white'>
 				<div className='container px-2 mx-auto h-full'>
 					<div className='max-w-[600px] flex h-full flex-col justify-center sm:items-start items-center sm:text-start text-center gap-4 '>
 						<h1 className='sm:text-6xl text-4xl font-bold'>
-							Путешествовать с нами весело
+							{t('hero.title')}
 						</h1>
-						<p className='sm:text-xl text-base'>
-							Путешествуйте по миру с нашей удивительной туристической
-							компанией, которая предлагает незабываемые туры и приключения по
-							всему миру.
-						</p>
-						<Button>Зарезервировать</Button>
+						<p className='sm:text-xl text-base'>{t('hero.subtitle')}</p>
+						<Button> {t('hero.button')}</Button>
 					</div>
 				</div>
 			</div>

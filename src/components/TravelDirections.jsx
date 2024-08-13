@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Container } from '../ui/Container'
 import { Reserve } from '../ui/Reserve'
 
@@ -34,41 +35,42 @@ const Card = ({ title, imageUrl }) => {
 }
 
 export const TravelDirections = () => {
+	const { t } = useTranslation()
 	// Пример данных
 	const directions = [
 		{
 			id: 1,
-			title: 'Путешествие по ОАЭ',
+			title: t('travel.cards.1'),
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
 		{
 			id: 2,
-			title: 'Тур по Италии',
+			title: t('travel.cards.2'),
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
 		{
-			id: 1,
-			title: 'Путешествие по ОАЭ',
+			id: 3,
+			title: t('travel.cards.3'),
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
 		{
-			id: 2,
-			title: 'Тур по Италии',
+			id: 4,
+			title: t('travel.cards.4'),
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
 		{
-			id: 1,
-			title: 'Путешествие по ОАЭ',
+			id: 5,
+			title: t('travel.cards.5'),
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
 		{
-			id: 2,
-			title: 'Тур по Италии',
+			id: 6,
+			title: t('travel.cards.6'),
 			imageUrl:
 				'https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg',
 		},
@@ -78,7 +80,7 @@ export const TravelDirections = () => {
 	return (
 		<section id='trip' className='py-32'>
 			<Container>
-				<h2 className='sm:text-6xl text-4xl mb-5'>Направления путешествия</h2>
+				<h2 className='sm:text-6xl text-4xl mb-5'>{t('travel.title')}</h2>
 			</Container>
 			<div className='grid lg:grid-cols-3 lg:p-0 p-5 lg:gap-0 gap-5'>
 				{directions.map((direction, index) => {

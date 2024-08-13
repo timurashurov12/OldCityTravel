@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { Button } from '../ui/button'
 import { Container } from '../ui/Container'
 
@@ -5,6 +6,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export const About = () => {
+	const { t } = useTranslation()
+
 	return (
 		<section id='about' className='py-32'>
 			<Container>
@@ -16,17 +19,9 @@ export const About = () => {
 						className='w-[5550px] rounded-[10px]'
 					/>
 					<div className='flex flex-col gap-5 items-start'>
-						<h2 className='lg:text-6xl text-5xl'>О нас</h2>
-						<p className='sm:text-lg text-base'>
-							Туристическая компания «Wonderful Travel» работает по направлениям
-							выездного, въездного и внутреннего туризма, туркомпания имеет
-							собственный потенциал и многолетний опыт туроператоров, на счету
-							турфирмы более 20 поездок по зарубежным странам и туристическим
-							маршрутам Узбекистана ( разработаны туристические программы), и на
-							основе этого содержательно и увлекательно организуется досуг и
-							путешествия местных и иностранных туристов.
-						</p>
-						<Button>Связь</Button>
+						<h2 className='lg:text-6xl text-5xl'>{t('about.title')}</h2>
+						<p className='sm:text-lg text-base'>{t('about.subtitle')}</p>
+						<Button>{t('button')}</Button>
 					</div>
 				</div>
 			</Container>

@@ -1,10 +1,12 @@
+import { useTranslation } from 'react-i18next'
 import { Container } from '../ui/Container'
 
 export const Video = () => {
+	const { t } = useTranslation()
 	return (
 		<section className='pt-32'>
 			<Container>
-				<h3 className='lg:text-6xl text-5xl pb-6'>Видеокассета</h3>
+				<h3 className='lg:text-6xl text-5xl pb-6'>{t('videoTitle')}</h3>
 				<div className='w-full'>
 					<iframe
 						className='w-full h-[730px]'
