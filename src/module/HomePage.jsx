@@ -1,25 +1,25 @@
-import { About } from '../components/About'
-import { Footer } from '../components/Footer'
-import { Header } from '../components/Header'
-import { Hero } from '../components/Hero'
-import { Services } from '../components/Services'
-import { TravelDirections } from '../components/TravelDirections'
-import { Video } from '../components/Video'
-import { WhyUs } from '../components/WhyUs'
+import {Header} from '../components/Header'
+import {Hero} from '../components/Hero'
+import {About} from '../components/About'
+import {WhyUs} from '../components/WhyUs'
+import {Services} from '../components/Services'
+import {TravelDirections} from '../components/TravelDirections'
+import {Map} from '../components/Map'
+import {Footer} from '../components/Footer'
 
 export const HomePage = () => {
-	return (
-		<>
-			<Header />
-			<main>
-				<Hero />
-				<About />
-				<WhyUs />
-				<TravelDirections />
-				<Services />
-				<Video />
-			</main>
-			<Footer />
-		</>
-	)
+    return (
+        <>
+            <Header/>
+            <main>
+                <Hero/>
+                <About/>
+                <WhyUs/>
+                <TravelDirections/>
+                <Services/>
+                <Map/>
+            </main>
+            <Footer/>
+        </>
+    )
 }

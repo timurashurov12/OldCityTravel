@@ -5,12 +5,13 @@ import about_photo_1 from "../assets/52891432998_630185b2ee_k.jpg"
 import about_photo_2 from "../assets/46889587444_d886f8b576_k.jpg"
 import {LazyLoadImage} from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
+import CustomTitle from "../ui/CustomTitle.jsx";
 
 export const About = () => {
     const {t} = useTranslation();
 
     return (
-        <section id='about' className='py-32'>
+        <section id="about" className={"mt-20"}>
             <Container>
                 <div className='grid lg:grid-cols-[1fr_40%] lg:flex-row items-center flex-col-reverse sm:gap-20 gap-5'>
                     <div className="relative w-full h-full">
@@ -30,11 +31,15 @@ export const About = () => {
                         />
                     </div>
                     <div className='flex flex-col gap-10 items-start'>
-                        <h2 className='lg:text-6xl text-5xl'>{t('about.title')}</h2>
+                        <CustomTitle tag="h2" text="about.title"/>
                         <div className='sm:text-lg text-base'>
-                            {t("about.subtitle", {returnObjects: true}).map((elem, key) => <p key={key} className="mb-3">{elem}</p>)}
+                            {t("about.subtitle", {returnObjects: true})
+                                .map((elem, key) => <p key={key}
+                                                       className="mb-3">{elem}</p>)}
                         </div>
-                        <Button>{t('call_button')}</Button>
+                        <Button>
+                            {t('call_button')}
+                        </Button>
                     </div>
                 </div>
             </Container>

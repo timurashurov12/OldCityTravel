@@ -1,74 +1,110 @@
 {
-	"button": "Связь",
-	"videoTitle": "Видеокассета",
+	"button": "Aloqa",
+	"main_button": "Bron qilish",
+	"call_button": "Biz bilan bog'laning",
 	"header": {
-		"home": "Домашняя страница",
-		"about": "О нас",
-		"service": "Наши сервисы",
-		"travel": "Путешествия",
-		"contact": "Коммуникация"
+		"about": "Biz haqimizda",
+		"whyUs": "Nega biz?",
+		"tours": "Sayohatlar",
+		"contact": "Aloqalar"
 	},
 	"hero": {
-		"title": "Путешествовать с нами весело",
-		"subtitle": "Путешествуйте по миру с нашей удивительной туристической компанией, которая предлагает незабываемые туры и приключения по всему миру.",
-		"button": "Зарезервировать"
+		"title": "Old City Travel bilan Markaziy Osiyoning sehrini kashf eting",
+		"subtitle": "Qadimiy Ipak yo'li bo'ylab unutilmas sayohatlar",
+		"button_1": "Sayohatlarni o'rganish"
 	},
 	"about": {
-		"title": "О нас",
-		"subtitle": "Туристическая компания «Wonderful Travel» работает по направлениям выездного, въездного и внутреннего туризма, туркомпания имеет собственный потенциал и многолетний опыт туроператоров, на счету турфирмы более 20 поездок по зарубежным странам и туристическим маршрутам Узбекистана ( разработаны туристические программы), и на основе этого содержательно и увлекательно организуется досуг и путешествия местных и иностранных туристов."
+		"title": "Biz haqimizda",
+		"subtitle": [
+			"Old City Travel - bu Markaziy Osiyoda sayohatlarni tashkil etishda ixtisoslashgan, g'ayratli sayohatchilar va mutaxassislar jamoasi.",
+			"Biz sizga qadimiy Ipak yo'li yo'nalishlari bo'ylab cho'zilgan ushbu ajoyib mintaqaning boyligi va xilma-xilligini tanishtirish uchun yaratilganmiz. Bizning sayohatlarimiz nafaqat safarlar, balki o’tmish atmosferasiga sho'ng'ish, buyuk sivilizatsiyalar ruhini his qilish va tabiat go'zalligidan bahramand bo'lish imkoniyatidir.",
+			"Bizning maqsadimiz sayohatingizni nafaqat ma'rifiy, balki qulay qilishdir, shuning uchun biz transportdan tortib mehmonxonalar va restoranlarni tanlashgacha barcha tafsilotlarni o'ylaymiz."
+		]
 	},
 	"whyUs": {
-		"title": "Почему мы?",
-		"subtitle": "Почему мы? В целях организации содержательного и приятного отдыха туристов проводится качественная организация групповых и самостоятельных поездок. Агентство имеет собственных потенциальных туроператоров и агентство разработало около 70 туристических маршрутов для путешествий по стране.",
-		"listSubtitle": {
-			"first": "Полное сотрудничество",
-			"second": "Безопасные путешествия",
-			"third": "Лучшие курорты"
-		},
-		"clients": "Счастливые клиенты"
+		"title": "Nega bizni tanlashadi?",
+		"advantages": [
+			{
+				"title": "Mintaqani bilish va tajriba",
+				"text": "Biz faqat Markaziy Osiyoda ixtisoslashganmiz va jamoamiz mintaqaning madaniy va tarixiy merosini chuqur tushunadi. Biz sayohatingizni haqiqiy kashfiyotga aylantirishni bilamiz, sizga nafaqat mashhur diqqatga sazovor joylarni, balki faqat mahalliy aholiga ma'lum bo'lgan yashirin marvaridlarni ham ko'rsatamiz."
+			},
+			{
+				"title": "Individual yondashuv",
+				"text": "Biz har bir sayohatchi noyob ekanligini tushunamiz, shuning uchun biz sizning qiziqishlaringiz va afzalliklaringizga to'liq mos keladigan sayohatlarni yaratamiz. Marshrutni rejalashtirishdan tortib, qulaylik darajasini tanlashgacha, biz har bir tilagingiz inobatga olinishini ta'minlaymiz."
+			},
+			{
+				"title": "Mukammal xizmat",
+				"text": "Biz sayohatingizni tashkil qilish bilan bog'liq barcha tashvishlarni o'z zimmamizga olamiz, shunda siz har bir lahzadan bahramand bo'lishingiz mumkin. Transferlardan va joylashuvdan tortib, ekskursiyalar va taomlargacha - har bir detal puxta o'ylangan. Old City Travel bilan sizning sayohatingiz nafaqat hayajonli, balki mutlaqo qulay va xavfsiz bo'ladi."
+			}
+		]
 	},
 	"travel": {
-		"title": "Направления путешествия",
+		"title": "Mashhur sayohatlar",
 		"cards": {
-			"1": "Путешествие по ОАЭ",
-			"2": "Тур по Италии",
-			"3": "Путешествие по ОАЭ",
-			"4": "Тур по Италии",
-			"5": "Путешествие по ОАЭ",
-			"6": "Тур по Италии"
-		}
+			"1": "Toshkent ekskursiyasi",
+			"2": "Samarqand ekskursiyasi",
+			"3": "Buxoro ekskursiyasi",
+			"4": "Xiva ekskursiyasi",
+			"5": "Ikki kunlik Toshkent ekskursiyasi",
+			"6": "Ikki kunlik Samarqand ekskursiyasi",
+			"7": "Ikki kunlik Buxoro ekskursiyasi",
+			"8": "Ikki kunlik Xiva ekskursiyasi"
+		},
+		"days": "(1)[{{count}} Kun];(2-4)[{{count}} Kunlar];(5-inf)[{{count}} Kunlar];",
+		"cities": "(1)[{{count}} Shahar];(2-4)[{{count}} Shaharlar];(5-inf)[{{count}} Shaharlar];"
 	},
 	"form": {
-		"button": "Забранировать",
-		"title": "Забронируйте сейчас",
-		"name": "Ваше имя",
-		"email": "Ваш email",
-		"phone": "Ваши пожелания",
-		"wishes": "Ваш телефон"
+		"button": "Bron qilish",
+		"title": "Hozir bron qiling",
+		"name": "Sizning ismingiz",
+		"email": "Sizning emailingiz",
+		"phone": "Sizning istaklaringiz",
+		"wishes": "Sizning telefoningiz"
 	},
 	"services": {
-		"title": "Организация поездок",
-		"1": "Организация поездок",
-		"2": "Визовая помощь",
-		"3": "Прокат автомобилей",
-		"4": "Организация питания",
-		"5": "Покупка авиабилета",
-		"6": "Гостиничный сервис"
+		"title": "Bizning xizmatlarimiz",
+		"services": [
+			{
+				"title": "Safarlarni tashkil qilish",
+				"text": "Biz sizning safaringizni unutilmas qilish uchun barcha afzalliklaringiz va qiziqishlaringizni hisobga olgan holda individual yo'nalishlarni yaratamiz."
+			},
+			{
+				"title": "Viza yordami",
+				"text": "Biz sizga viza olish va qulay va to'siqsiz sayohat qilish uchun barcha zarur hujjatlarni tayyorlashda yordam beramiz."
+			},
+			{
+				"title": "Transferlarni tashkil qilish",
+				"text": "Biz siz uchun qulay transferlarni tashkil qilamiz, sayohatingizning har qanday nuqtasida xavfsiz va o'z vaqtida harakatlanishni ta'minlaymiz."
+			},
+			{
+				"title": "Ovqatlanishni tashkil qilish",
+				"text": "Biz sizning ta'mingiz va mintaqaviy oshxona xususiyatlariga qarab restoran va kafelarni tanlaymiz, har bir joyda gastronomik zavqni ta'minlaymiz."
+			},
+			{
+				"title": "Aviabilet sotib olish",
+				"text": "Biz siz uchun eng qulay va foydali parvoz variantlarini topamiz, barcha bron qilish tafsilotlarini o'ylaymiz."
+			},
+			{
+				"title": "Mehmonxona bron qilish",
+				"text": "Biz sizning qulaylik va joylashuv talablaringizga javob beradigan eng yaxshi mehmonxonalarni topamiz, shunda siz Markaziy Osiyoning istalgan qismida o'zingizni uyda his qilishingiz mumkin."
+			}
+		]
 	},
 	"footer": {
-		"title": "Путешествуйте по миру с нашей удивительной туристической компанией, которая предлагает незабываемые туры и приключения по всему миру.",
+		"title": "Old City Travel - bu Markaziy Osiyoda sayohatlarni tashkil etishda ixtisoslashgan, g'ayratli sayohatchilar va mutaxassislar jamoasi.",
 		"departments": {
-			"title": "Отделы",
-			"home": "Домашняя страница",
-			"about": "О нас",
-			"service": "Наши сервисы",
-			"travel": "Путешествия",
-			"contact": "Коммуникация"
+			"title": "Bo'limlar",
+			"home": "Bosh sahifa",
+			"about": "Biz haqimizda",
+			"service": "Bizning xizmatlarimiz",
+			"travel": "Sayohatlar",
+			"contact": "Aloqa"
 		},
 		"contactInfo": {
-			"title": "Связь",
-			"map": "Бухарская область, Бухарский район, МФУ Ойбека, улица Буюк Ипак ёли, 64"
-		}
+			"title": "Aloqa",
+			"map": "Buxoro"
+		},
+		"copyright": "© 2024 Old City Travel. Barcha huquqlar himoyalangan."
 	},
-	"support": "При поддержке"
+	"support": "Qo'llab-quvvatlash tomonidan"
 }

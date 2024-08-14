@@ -1,55 +1,31 @@
-import { Checkbox, CheckboxGroup } from '@nextui-org/react'
-import { Button } from '../ui/button'
-import { Container } from '../ui/Container'
-
-import { useTranslation } from 'react-i18next'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import {Container} from '../ui/Container'
 import 'react-lazy-load-image-component/src/effects/blur.css'
+import CustomTitle from "../ui/CustomTitle.jsx";
+import {useTranslation} from "react-i18next";
 
 export const WhyUs = () => {
-	const { t } = useTranslation()
-	return (
-		<section className='py-32'>
-			<Container>
-				<div className='flex justify-between lg:flex-row flex-col gap-7'>
-					<div className='flex flex-col gap-5 items-start max-w-[550px]'>
-						<h2 className='sm:text-6xl text-5xl'>{t('whyUs.title')}</h2>
-						<p className='sm:text-xl'>{t('whyUs.subtitle')}</p>
-						<CheckboxGroup
-							orientation='vertical'
-							isReadOnly={true}
-							defaultValue={[
-								'Полное сотрудничество',
-								'Безопасные путешествия',
-								'Лучшие курорты',
-							]}
-						>
-							<Checkbox value='Полное сотрудничество'>
-								<p className='text-lg'>{t('whyUs.listSubtitle.first')}</p>
-							</Checkbox>
-							<Checkbox value='Безопасные путешествия'>
-								<p className='text-lg'>{t('whyUs.listSubtitle.second')}</p>
-							</Checkbox>
-							<Checkbox value='Лучшие курорты'>
-								<p className='text-lg'>{t('whyUs.listSubtitle.third')}</p>
-							</Checkbox>
-						</CheckboxGroup>
-						<Button>{t('button')}</Button>
-					</div>
-					<div className='lg:max-w-[750px] relative h-fit'>
-						<LazyLoadImage
-							effect='blur'
-							src='https://wallpapers.com/images/featured/4k-forest-7sfd6znw2ry6hnlt.jpg'
-							alt='about-page'
-							className='w-[5550px] rounded-[10px]'
-						/>
-						<div className='absolute bg-white right-[30px] bottom-[30px] text-center px-5 rounded-lg'>
-							<p className='text-4xl font-semibold text-[#141e30]'>350+</p>
-							<p className='text-xl text-[#141e30]'>{t('whyUs.clients')}</p>
-						</div>
-					</div>
-				</div>
-			</Container>
-		</section>
-	)
+    const {t} = useTranslation();
+    return (
+        <section className="my-20 bg-[#6E8F0B] p-10 text-white">
+            <Container>
+                <CustomTitle tag="h2" text="whyUs.title" className={"text-center mb-28"}/>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    {
+                        t("whyUs.advantages", {returnObjects: true}).map((elem, key) => (
+                            <div key={key} className="text-center w-full h-full relative text-black">
+                                <div
+                                    className={"shadow absolute top-[-50px] left-0 right-0 flex items-center justify-center mx-auto mb-5 text-4xl w-24 h-24 font-black border-3 border-[#F5B31C] bg-[#F5B31C] rounded-full"}>
+                                    {key + 1}
+                                </div>
+                                <div className={"bg-white w-full h-full rounded-3xl pt-14 pb-5 px-5"}>
+                                    <h3 className="text-2xl font-medium mb-3">{elem.title}</h3>
+                                    <p className="text-base">{elem.text}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </Container>
+        </section>
+    )
 }

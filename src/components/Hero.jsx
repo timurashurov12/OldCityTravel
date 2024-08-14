@@ -10,23 +10,27 @@ import bg2 from '../assets/2986c598176097.5ed667624a051.jpg'
 import bg from '../assets/58286198176097.5ed6676247b29.webp'
 import bg1 from '../assets/db55bf98176097.5ed667624cc20.webp'
 import {Button} from '../ui/button'
+import CustomTitle from "../ui/CustomTitle.jsx";
 
 export const Hero = () => {
     const {t} = useTranslation()
     return (
-        // <section className='relative w-full h-[calc(100vh_-_136px)] overflow-hidden'>
         <section className='relative w-full h-screen'>
             <div className='absolute w-full h-full z-10 text-white'>
                 <div className='container px-2 mx-auto h-full'>
                     <div
-                        className='max-w-[600px] flex h-full flex-col justify-center sm:items-start items-center sm:text-start text-center gap-4 '>
-                        <h1 className='sm:text-6xl text-4xl font-bold'>
-                            {t('hero.title')}
-                        </h1>
+                        className='max-w-[800px] mx-auto flex h-full flex-col justify-center items-center text-center gap-4'>
+                        <CustomTitle tag="h1" text="hero.title"/>
                         <p className='sm:text-xl text-base'>{t('hero.subtitle')}</p>
                         <div className="flex gap-5">
-                            <Button className={"bg-green-600 border-green-600 hover:text-green-600"}> {t('hero.button_1')}</Button>
-                            <Button>{t('call_button')}</Button>
+                            <Button
+                                color={"secondary"}
+                            >
+                                {t('hero.button_1')}
+                            </Button>
+                            <Button>
+                                {t('call_button')}
+                            </Button>
                         </div>
                     </div>
                 </div>

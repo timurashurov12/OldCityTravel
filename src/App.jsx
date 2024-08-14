@@ -4,7 +4,6 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Services } from './components/Services'
 import { TravelDirections } from './components/TravelDirections'
-import { Video } from './components/Video'
 import { WhyUs } from './components/WhyUs'
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
 				<WhyUs />
 				<TravelDirections />
 				<Services />
-				<Video />
 			</main>
 			<Footer />
 		</>
