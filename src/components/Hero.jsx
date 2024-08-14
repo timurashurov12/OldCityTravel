@@ -25,8 +25,8 @@ export const Hero = () => {
                         </h1>
                         <p className='sm:text-xl text-base'>{t('hero.subtitle')}</p>
                         <div className="flex gap-5">
-                            <Button className={"bg-green-600 border-green-600"}> {t('hero.button_1')}</Button>
-                            <Button> {t('hero.button_2')}</Button>
+                            <Button className={"bg-green-600 border-green-600 hover:text-green-600"}> {t('hero.button_1')}</Button>
+                            <Button>{t('call_button')}</Button>
                         </div>
                     </div>
                 </div>
