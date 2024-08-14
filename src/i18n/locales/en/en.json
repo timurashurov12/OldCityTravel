@@ -1,74 +1,74 @@
 {
-	"button": "",
-	"videoTitle": "",
-	"header": {
-		"home": "",
-		"about": "",
-		"service": "",
-		"travel": "",
-		"contact": ""
-	},
-	"hero": {
-		"title": "",
-		"subtitle": "",
-		"button": ""
-	},
-	"about": {
-		"title": "",
-		"subtitle": ""
-	},
-	"whyUs": {
-		"title": "",
-		"subtitle": "",
-		"listSubtitle": {
-			"first": "",
-			"second": "",
-			"third": ""
-		},
-		"clients": ""
-	},
-	"travel": {
-		"title": "",
-		"cards": {
-			"1": "",
-			"2": "",
-			"3": "",
-			"4": "",
-			"5": "",
-			"6": ""
-		}
-	},
-	"form": {
-		"button": "",
-		"title": "",
-		"name": "",
-		"email": "",
-		"phone": "",
-		"wishes": ""
-	},
-	"services": {
-		"title": "",
-		"1": "",
-		"2": "",
-		"3": "",
-		"4": "",
-		"5": "",
-		"6": ""
-	},
-	"footer": {
-		"title": "",
-		"departments": {
-			"title": "",
-			"home": "",
-			"about": "",
-			"service": "",
-			"travel": "",
-			"contact": ""
-		},
-		"contactInfo": {
-			"title": "",
-			"map": ""
-		}
-	},
-	"support": ""
+  "button": "",
+  "videoTitle": "",
+  "alt": "Old City Travel",
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "service": "Tours",
+    "contact": "Contacts"
+  },
+  "hero": {
+    "title": "Discover the Magic of Central Asia with Old City Travel",
+    "subtitle": "Unforgettable Journeys through the Ancient Silk Road",
+    "button": "Explore Tours"
+  },
+  "about": {
+    "title": "",
+    "subtitle": ""
+  },
+  "whyUs": {
+    "title": "",
+    "subtitle": "",
+    "listSubtitle": {
+      "first": "",
+      "second": "",
+      "third": ""
+    },
+    "clients": ""
+  },
+  "travel": {
+    "title": "",
+    "cards": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": ""
+    }
+  },
+  "form": {
+    "button": "",
+    "title": "",
+    "name": "",
+    "email": "",
+    "phone": "",
+    "wishes": ""
+  },
+  "services": {
+    "title": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "6": ""
+  },
+  "footer": {
+    "title": "",
+    "departments": {
+      "title": "",
+      "home": "",
+      "about": "",
+      "service": "",
+      "travel": "",
+      "contact": ""
+    },
+    "contactInfo": {
+      "title": "",
+      "map": ""
+    }
+  },
+  "support": ""
 }
