@@ -40,10 +40,14 @@ export const Reserve = ({ id }) => {
 				}/sendMessage`,
 				{
 					chat_id: import.meta.env.VITE_USER_ID, // замените на ID чата или пользователя
-					text: `Название заказа: ${tourHashMap[id]}\nНовый заказ от ${name}\nEmail: <a href='mailto:${email}'>${email}</a>\nТелефон: <a href='tel:${phone}'>${phone}</a>\nПожелания: ${wishes}`,
+					text: `Название тура: ${tourHashMap[id]}\nНовый заказ от ${name}\nEmail: <a href='mailto:${email}'>${email}</a>\nТелефон: <a href='tel:${phone}'>${phone}</a>\nПожелания: ${wishes}`,
 					parse_mode: 'HTML',
 				}
 			)
+			setEmail('')
+			setName('')
+			setPhone('')
+			setWishes('')
 			alert('Заказ отправлен в Telegram!')
 		} catch (error) {
 			alert('Ошибка при отправке заказа в Telegram.')
