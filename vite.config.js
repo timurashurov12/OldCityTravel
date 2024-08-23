@@ -1,4 +1,3 @@
-// vite.config.js
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
@@ -15,7 +14,7 @@ export default defineConfig({
 					if (id.includes('node_modules/lodash')) {
 						return 'vendor-lodash'
 					}
-					// You can add more manual chunking logic here
+					// Дополнительная логика разделения чанков
 				},
 			},
 		},
