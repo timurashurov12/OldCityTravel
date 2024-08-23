@@ -35,9 +35,7 @@ export const Reserve = ({ id }) => {
 		}
 		try {
 			await axios.post(
-				`https://api.telegram.org/bot${
-					import.meta.env.VITE_BOT_API
-				}/sendMessage`,
+				`https://api.telegram.org/bot7252709561:AAHuM4MlUEJEyUA7ZeiyAZSOc731IFBv6xk/sendMessage`,
 				{
 					chat_id: import.meta.env.VITE_USER_ID, // замените на ID чата или пользователя
 					text: `Название тура: ${tourHashMap[id]}\nНовый заказ от ${name}\nEmail: <a href='mailto:${email}'>${email}</a>\nТелефон: <a href='tel:${phone}'>${phone}</a>\nПожелания: ${wishes}`,
