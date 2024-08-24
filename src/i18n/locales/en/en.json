@@ -106,5 +106,11 @@
 		},
 		"copyright": "© 2024 Old City Travel. All rights reserved."
 	},
-	"support": "Supported by"
+	"support": "Supported by",
+	"productPage": {
+		"tourName": "Tour Name",
+		"days": "Days",
+		"cities": "Duration",
+		"price": "Price"
+	}
 }

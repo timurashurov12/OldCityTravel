@@ -1,9 +1,13 @@
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
+import { Button } from '@nextui-org/react'
 import { useTranslation } from 'react-i18next'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import { Link, useParams } from 'react-router-dom'
 import { Reserve } from './Reserve'
 
 export const Card = props => {
 	const { t } = useTranslation()
+	const { locale } = useParams()
 	const {
 		title,
 		id,
@@ -113,6 +117,14 @@ export const Card = props => {
 					</div>
 				</div>
 				<Reserve id={id} />
+				<Link to={`/${locale}/tour/${id}`}>
+					<Button
+						endContent={<KeyboardArrowRightIcon />}
+						className='bg-[#F5B31C] border-[#F5B31C] text-black font-medium sm:py-4 p-3 sm:px-7 px-5 rounded-[40px] border transition-all hover:-translate-y-1 mt-1 ml-3'
+					>
+						View details
+					</Button>
+				</Link>
 			</div>
 		</div>
 	)

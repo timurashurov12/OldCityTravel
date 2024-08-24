@@ -106,5 +106,11 @@
 		},
 		"copyright": "© 2024 Old City Travel. Все права защищены."
 	},
-	"support": "При поддержке"
+	"support": "При поддержке",
+	"productPage": {
+		"tourName": "Название тура",
+		"days": "Дней",
+		"cities": "Длительность",
+		"price": "Цена"
+	}
 }

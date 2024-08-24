@@ -4,16 +4,21 @@ import { Container } from '../ui/Container'
 import SwipeableTemporaryDrawer from '../ui/mobileMenu'
 
 import { useTranslation } from 'react-i18next'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 
 export const Header = () => {
 	const { i18n, t } = useTranslation()
+	const { id } = useParams()
 	const navigate = useNavigate()
 
 	const changeLanguage = language => {
 		i18n.changeLanguage(language)
 		// Update the URL to reflect the new language
-		navigate(`/${language}`, { replace: true })
+		if (id) {
+			navigate(`/${language}/tour/${id}`, { replace: true })
+		} else {
+			navigate(`/${language}`, { replace: true })
+		}
 	}
 	// console.log(document.body.style.overflow = 'hidden')
 	const [isScrolled, setIsScrolled] = useState(false)
@@ -32,7 +37,7 @@ export const Header = () => {
 	return (
 		<header
 			className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-				isScrolled ? 'bg-[#141e30]' : 'bg-transparent'
+				isScrolled || id ? 'bg-[#141e30]' : 'bg-transparent'
 			}`}
 		>
 			<Container>

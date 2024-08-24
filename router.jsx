@@ -1,5 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 import { HomePage } from './src/module/HomePage'
+import { ProductPage } from './src/module/ProductPage'
 
 export const router = createBrowserRouter([
 	{
@@ -7,8 +8,8 @@ export const router = createBrowserRouter([
 		element: <HomePage />,
 	},
 	{
-		path: '/tour/:id',
-		element: <h1>Card</h1>,
+		path: '/:locale/tour/:id',
+		element: <ProductPage />,
 	},
 	{
 		path: '*', // Catch all undefined paths

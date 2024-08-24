@@ -106,5 +106,11 @@
 		},
 		"copyright": "© 2024 Old City Travel. Barcha huquqlar himoyalangan."
 	},
-	"support": "Qo'llab-quvvatlash tomonidan"
+	"support": "Qo'llab-quvvatlash tomonidan",
+	"productPage": {
+		"tourName": "Sayohat nomi",
+		"days": "Kunlar",
+		"cities": "Davomiyligi",
+		"price": "Narxi"
+	}
 }
