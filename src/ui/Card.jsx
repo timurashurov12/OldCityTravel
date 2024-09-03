@@ -116,13 +116,13 @@ export const Card = props => {
 						{t('travel.cities', { postProcess: 'interval', count: days })}
 					</div>
 				</div>
-				<Reserve id={id} />
+				{/* <Reserve id={id} /> */}
 				<Link to={`/${locale}/tour/${id}`}>
 					<Button
 						endContent={<KeyboardArrowRightIcon />}
 						className='bg-[#F5B31C] border-[#F5B31C] text-black font-medium sm:py-4 p-3 sm:px-7 px-5 rounded-[40px] border transition-all hover:-translate-y-1 mt-1 ml-3'
 					>
-						View details
+							{t('second_button')}
 					</Button>
 				</Link>
 			</div>

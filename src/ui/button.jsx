@@ -15,7 +15,7 @@ export const Button = ({
 
     return (
         <button
-            type={type}
+            type={type}cities
             className={`${colorVariants[color]} font-medium sm:py-4 p-3 sm:px-7 px-5 rounded-[40px] border transition-all hover:-translate-y-1 ${className}`}>
             {children}
         </button>
