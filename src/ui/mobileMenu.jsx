@@ -36,10 +36,10 @@ export default function SwipeableTemporaryDrawer() {
 			<List>
 				{[
 					{ text: 'Домашняя страница', link: '/' },
-					{ text: 'О нас', link: '/#about' },
-					{ text: 'Наши сервисы', link: '/#services' },
-					{ text: 'Путешествия', link: '/#trip' },
-					{ text: 'Коммуникация', link: '/#contact' },
+					{ text: 'О нас', link: '#about' },
+					{ text: 'Наши сервисы', link: '#services' },
+					{ text: 'Путешествия', link: '#trip' },
+					{ text: 'Коммуникация', link: '#contact' },
 				].map(item => (
 					<ListItem key={item.text} disablePadding>
 						<ListItemButton component='a' href={item.link}>
@@ -76,7 +76,7 @@ export default function SwipeableTemporaryDrawer() {
 				onClick={toggleDrawer(true)}
 			/>
 			<SwipeableDrawer
-				sx={{ transform: 'translateY(136px)' }}
+				sx={{ transform: 'translateY(87px)' }}
 				anchor='top'
 				open={open}
 				onClose={toggleDrawer(false)}

@@ -1,6 +1,6 @@
 {
 	"button": "Contact",
-	"second_button":"View details",
+	"second_button": "View details",
 	"main_button": "Book Now",
 	"call_button": "Contact Us",
 	"header": {
@@ -113,5 +113,15 @@
 		"days": "Days",
 		"cities": "Duration",
 		"price": "Price"
-	}
+	},
+	"tourAccordion": {
+		"1": "Arrival in the capital - Tashkent",
+		"2": "Historical Tashkent - city tour and train transfer to Samarkand",
+		"3": "Famous historical sites of Samarkand - city tour",
+		"4": "Samarkand countryside tour and train transfer to Bukhara",
+		"5": "Jewel of the East - Bukhara historical tour",
+		"6": "Bukhara countryside tour and drive to Khiva",
+		"7": "Returning home - until we meet again, Uzbekistan."
+	},
+	"tourDay": "Day"
 }

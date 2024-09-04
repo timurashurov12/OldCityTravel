@@ -1,7 +1,7 @@
 {
 	"button": "Aloqa",
 	"main_button": "Bron qilish",
-	"second_button":"Tafsilotlarni ko‘rish",
+	"second_button": "Tafsilotlarni ko‘rish",
 	"call_button": "Biz bilan bog'laning",
 	"header": {
 		"about": "Biz haqimizda",
@@ -113,5 +113,15 @@
 		"days": "Kunlar",
 		"cities": "Davomiyligi",
 		"price": "Narxi"
-	}
+	},
+	"tourAccordion": {
+		"1": "Poytaxtga - Toshkentga kelish",
+		"2": "Tarixiy Toshkent - Toshkent shahriga ekskursiya va Samarqandga poezd bilan o‘tish",
+		"3": "Samarqandning mashhur tarixiy joylari - shahar bo‘ylab ekskursiya",
+		"4": "Samarqanddan tashqaridagi ekskursiya va Buxoroga poezd bilan o‘tish",
+		"5": "Sharq marvaridi - Buxoradagi ekskursiya tarixi",
+		"6": "Buxoradan tashqaridagi ekskursiya va Xivaga mashinada o‘tish",
+		"7": "Uyga qaytish - Yangi uchrashuvlar, O‘zbekiston."
+	},
+	"tourDay": "Kun"
 }
