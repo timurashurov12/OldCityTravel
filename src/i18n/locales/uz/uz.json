@@ -46,10 +46,11 @@
 			"2": "Samarqand ekskursiyasi",
 			"3": "Buxoro ekskursiyasi",
 			"4": "Xiva ekskursiyasi",
-			"5": "Ikki kunlik Toshkent ekskursiyasi",
-			"6": "Ikki kunlik Samarqand ekskursiyasi",
-			"7": "Ikki kunlik Buxoro ekskursiyasi",
-			"8": "Ikki kunlik Xiva ekskursiyasi"
+			"5": "O‘zbekiston bo‘ylab sayohat",
+			"6": "Ikki kunlik Toshkent ekskursiyasi",
+			"7": "Ikki kunlik Samarqand ekskursiyasi",
+			"8": "Ikki kunlik Buxoro ekskursiyasi",
+			"9": "Ikki kunlik Xiva ekskursiyasi"
 		},
 		"days": "(1)[{{count}} Kun];(2-4)[{{count}} Kunlar];(5-inf)[{{count}} Kunlar];",
 		"cities": "(1)[{{count}} Shahar];(2-4)[{{count}} Shaharlar];(5-inf)[{{count}} Shaharlar];"

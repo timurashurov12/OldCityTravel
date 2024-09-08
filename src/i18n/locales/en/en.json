@@ -46,10 +46,11 @@
 			"2": "Samarkand Tour",
 			"3": "Bukhara Tour",
 			"4": "Khiva Tour",
-			"5": "Two-Day Tashkent Tour",
-			"6": "Two-Day Samarkand Tour",
-			"7": "Two-Day Bukhara Tour",
-			"8": "Two-Day Khiva Tour"
+			"5": "Uzbekistan Tour",
+			"6": "Two-Day Tashkent Tour",
+			"7": "Two-Day Samarkand Tour",
+			"8": "Two-Day Bukhara Tour",
+			"9": "Two-Day Khiva Tour"
 		},
 		"days": "(1)[{{count}} Day];(2-4)[{{count}} Days];(5-inf)[{{count}} Days];",
 		"cities": "(1)[{{count}} City];(2-4)[{{count}} Cities];(5-inf)[{{count}} Cities];"

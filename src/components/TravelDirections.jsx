@@ -14,12 +14,12 @@ export const TravelDirections = () => {
 	const { t } = useTranslation()
 	const directions = [
 		{
-			id: 1,
-			title: t('travel.cards.1'),
+			id: 5,
+			title: t('travel.cards.5'),
 			image: image_1,
 			columns: 'span 2',
-			price: 999,
-			days: 1,
+			price: 2180,
+			days: 7,
 		},
 		{
 			id: 2,
@@ -32,14 +32,21 @@ export const TravelDirections = () => {
 			id: 3,
 			title: t('travel.cards.3'),
 			image: image_3,
-			price: 999,
+			price: 120,
 			days: 1,
 		},
+		
 		{
 			id: 4,
 			title: t('travel.cards.4'),
 			image: image_4,
-			columns: 'span 2',
+			price: 999,
+			days: 1,
+		},
+		{
+			id: 1,
+			title: t('travel.cards.1'),
+			image: image_1,
 			price: 999,
 			days: 1,
 		},

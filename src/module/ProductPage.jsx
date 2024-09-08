@@ -44,6 +44,13 @@ export const ProductPage = () => {
 			price: 999,
 			days: 1,
 		},
+		5: {
+			title: t('travel.cards.5'),
+			image: image_4,
+			columns: 'span 2',
+			price: 2180,
+			days: 7,
+		},
 	}
 
 	return (
@@ -95,94 +102,54 @@ export const ProductPage = () => {
 							<Reserve id={id} />
 						</div>
 					</div>
-					<div className='py-5'>
-						<Accordion variant='splitted'>
-							<AccordionItem
-								key='1'
-								aria-label={`${t('tourDay')} 1.`}
-								startContent={`${t('tourDay')} 1.`}
-								title={t('tourAccordion.1')}
-							></AccordionItem>
-							<AccordionItem
-								key='2'
-								aria-label={`${t('tourDay')} 2.`}
-								startContent={`${t('tourDay')} 2.`}
-								title={t('tourAccordion.2')}
-							></AccordionItem>
-							<AccordionItem
-								key='3'
-								aria-label={`${t('tourDay')} 3.`}
-								startContent={`${t('tourDay')} 3.`}
-								title={t('tourAccordion.3')}
-							></AccordionItem>
-							<AccordionItem
-								key='4'
-								aria-label={`${t('tourDay')} 4.`}
-								startContent={`${t('tourDay')} 4.`}
-								title={t('tourAccordion.4')}
-							></AccordionItem>
-							<AccordionItem
-								key='5'
-								aria-label={`${t('tourDay')} 5.`}
-								startContent={`${t('tourDay')} 5.`}
-								title={t('tourAccordion.5')}
-							></AccordionItem>
-							<AccordionItem
-								key='6'
-								aria-label={`${t('tourDay')} 6.`}
-								startContent={`${t('tourDay')} 6.`}
-								title={t('tourAccordion.6')}
-							></AccordionItem>
-							<AccordionItem
-								key='7'
-								aria-label={`${t('tourDay')} 7.`}
-								startContent={`${t('tourDay')} 7.`}
-								title={t('tourAccordion.7')}
-							></AccordionItem>
-							{/* <AccordionItem
-								key='1'
-								aria-label={`${t('tourDay')} 1.`}
-								startContent={`${t('tourDay')} 1.`}
-								title='Прилет в столицу - Ташкент'
-							></AccordionItem>
-							<AccordionItem
-								key='2'
-								aria-label={`${t('tourDay')} 2.`}
-								startContent={`${t('tourDay')} 2.`}
-								title='Исторический Ташкент - экскурсия по столице Узбекистана и переезд в Самарканд на поезде'
-							></AccordionItem>
-							<AccordionItem
-								key='3'
-								aria-label={`${t('tourDay')} 3.`}
-								startContent={`${t('tourDay')} 3.`}
-								title='Знаменитые исторические места Самарканда - экскурсия по городу'
-							></AccordionItem>
-							<AccordionItem
-								key='4'
-								aria-label={`${t('tourDay')} 4.`}
-								startContent={`${t('tourDay')} 4.`}
-								title='Самарканд экскурсия за город и переезд в Бухару на поезде'
-							></AccordionItem>
-							<AccordionItem
-								key='5'
-								aria-label={`${t('tourDay')} 5.`}
-								startContent={`${t('tourDay')} 5.`}
-								title='Жемчужина Востока - экскурсионная история Бухары'
-							></AccordionItem>
-							<AccordionItem
-								key='6'
-								aria-label={`${t('tourDay')} 6.`}
-								startContent={`${t('tourDay')} 6.`}
-								title='Бухара - экскурсионная поездка за город и переезд на авто в Хиву'
-							></AccordionItem>
-							<AccordionItem
-								key='7'
-								aria-label={`${t('tourDay')} 7.`}
-								startContent={`${t('tourDay')} 7.`}
-								title='Возвращаемся домой - до новых встреч Узбекистан.'
-							></AccordionItem> */}
-						</Accordion>
-					</div>
+					{id == 5 && (
+						<div className='py-5'>
+							<Accordion variant='splitted'>
+								<AccordionItem
+									key='1'
+									aria-label={`${t('tourDay')} 1.`}
+									startContent={`${t('tourDay')} 1.`}
+									title={t('tourAccordion.1')}
+								></AccordionItem>
+								<AccordionItem
+									key='2'
+									aria-label={`${t('tourDay')} 2.`}
+									startContent={`${t('tourDay')} 2.`}
+									title={t('tourAccordion.2')}
+								></AccordionItem>
+								<AccordionItem
+									key='3'
+									aria-label={`${t('tourDay')} 3.`}
+									startContent={`${t('tourDay')} 3.`}
+									title={t('tourAccordion.3')}
+								></AccordionItem>
+								<AccordionItem
+									key='4'
+									aria-label={`${t('tourDay')} 4.`}
+									startContent={`${t('tourDay')} 4.`}
+									title={t('tourAccordion.4')}
+								></AccordionItem>
+								<AccordionItem
+									key='5'
+									aria-label={`${t('tourDay')} 5.`}
+									startContent={`${t('tourDay')} 5.`}
+									title={t('tourAccordion.5')}
+								></AccordionItem>
+								<AccordionItem
+									key='6'
+									aria-label={`${t('tourDay')} 6.`}
+									startContent={`${t('tourDay')} 6.`}
+									title={t('tourAccordion.6')}
+								></AccordionItem>
+								<AccordionItem
+									key='7'
+									aria-label={`${t('tourDay')} 7.`}
+									startContent={`${t('tourDay')} 7.`}
+									title={t('tourAccordion.7')}
+								></AccordionItem>
+							</Accordion>
+						</div>
+					)}
 				</Container>
 			</main>
 			<Footer />
